@@ -5,8 +5,8 @@ HEADER_LENGTH = 200
 
 ip_file = open('server_ip.txt', 'r')
 
-ip_adress = str(ip_file.readlines(1))
-IP = ip_adress[2:-2].strip()
+ip_address = str(ip_file.readlines(1))
+IP = ip_address[2:-2].strip()
 PORT = 5005
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

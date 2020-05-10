@@ -14,8 +14,8 @@ HEADER_LENGTH = 200
 
 ip_file = open('server_ip.txt', 'r')
 
-ip_adress = str(ip_file.readlines(1))
-IP = ip_adress[2:-2].strip()
+ip_address = str(ip_file.readlines(1))
+IP = ip_address[2:-2].strip()
 PORT = 5005
 
 full_username = ""
@@ -54,8 +54,8 @@ class MenuToolBar(QDockWidget):
         # ******* Create the File Menu *******
         self.FileMenu = self.Parent.addMenu('File')
         # ******* Create Exit Menu Items *******
-        self.ExitAct = QAction('Close', self)
-        self.ExitAct.setShortcut("Ctrl+C")
+        self.ExitAct = QAction('Quit', self)
+        self.ExitAct.setShortcut("Ctrl+Q")
         self.ExitAct.setStatusTip('Close the app.')
         self.ExitAct.triggered.connect(close_app)
         self.MenuActRef['ExitAct'] = self.ExitAct
